@@ -1,0 +1,83 @@
+﻿/* #Base 984px Grid
+================================================== */
+
+/* Declare size of the display area and center */
+.container			{ width: 984px; margin: 0 auto; }
+
+.fourth,
+.third,
+.half,
+.two-thirds,
+.three-fourths			{ float:left; margin-left: 24px; }
+
+/* tool used to test grid spacing just apply it to the containing element ou are working with */
+.grid				{ background: url("images/screen.png"); }
+
+/* Normal Grid Setup */
+
+.fourth				{ width: 228px; }
+.third				{ width: 312px; }
+.half				{ width: 480px; }
+.two-thirds			{ width: 648px; }
+.three-fourths			{ width: 732px; }
+
+.row				{ clear:left; }
+.first				{ margin: 0; }
+
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after			{ content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns, or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after			{ content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.row:after,
+.clearfix:after			{ clear: both; }
+.row,
+.clearfix			{ zoom: 1; }
+/* You can also use a <br class="clear" /> to clear columns */
+.clear				{ clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
+/* #Tablet (Portrait)
+================================================== */
+/* Ipad Portrait 768px Grid Setup */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.container		{ width: 732px; }
+	.grid			{ background: url("images/tablet.png"); }
+	.three-fourths,
+	.full			{ width: 100% }
+	.none			{ width: 0; display: none;}
+	.fourth,			
+	.third			{ width: 228px }
+	.half			{ width: 354px }
+	.two-thirds		{ width: 480px }
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Portrait Mode Phones 320px and Below Grid Setup */
+
+@media only screen and (max-width: 767px) {
+	.container		{ width: 100%; }
+	.grid			{ background: url("images/mobile.png"); }
+	.full			{ width: 100% }
+	.none			{ width: 0; display: none;}
+	.fourth,
+	.third,
+	.half,
+	.two-thirds,
+	.three-fourths		{ float:none; margin-left: 0; width:100%; }
+}
+
+/*  #Mobile (Landscape)
+================================================== */
+/* Iphone Landscape 480px Grid Setup */
+
+@media only screen and (min-width: 478px) and (max-width: 767px) {
+	.container		{ width: 444px; }
+	.grid			{ background: url("images/mobile.png"); }
+}

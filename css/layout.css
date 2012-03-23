@@ -1,0 +1,226 @@
+/*
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+/* Table of Content
+==================================================
+	#Base Fixes
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* # Base Fixes
+================================================== */
+	body {
+		font: 14px/24px "Droid Sans","HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #333;
+	 }
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #333;
+		font-family: "Droid Serif", "Georgia", "Times New Roman", serif;
+		font-weight: 700; 
+		line-height: 48px; 
+		margin-bottom: 24px; 
+		position: relative;
+		word-spacing: -0.125em;
+	}
+
+	h1 { 
+		font-family: "Museo Slab", "Droid Serif", "Georgia", "Times New Roman", serif;
+		font-weight: 900;
+		font-size: 60px; 
+		line-height: 66px; 
+		margin-bottom: 24px;
+	}
+	
+	h2 { 
+		font-size: 48px;
+		line-height: 54px; 
+		margin-bottom: 24px;
+	}
+	
+	h3 { 
+		font-size: 36px; 
+		line-height: 42px;
+	}
+	
+	h4 { 
+		font-size: 24px; 
+		line-height: 24px; 
+	}
+	
+	h5 { 
+		font-size: 18px;
+		font-family: "Droid Sans","HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		line-height: 24px; 
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+	
+	h6 { 
+		font-size: 16px;
+		line-height: 24px; 
+		margin-bottom: 0;
+	}
+
+	p { margin: 0 0 24px 0; }
+
+	p.lead { line-height: 24px;  }
+
+	b, 
+	strong,
+	caption, 
+	th, 
+	thead, 
+	dt, 
+	legend					{ font-weight: bold; color: #333;  }
+
+	cite,
+	dfn					{ font-size: 14px; text-transform: none; color: #aaa; } 
+
+	em, 
+	i					{ font-style: italic; }
+	
+	small { 
+		font-size: 0.875em;
+		line-height: 1.125em;
+	}
+
+	big					{ font-size: 125%; line-height: 80%; }
+	abbr, acronym				{ font-size: 85%; text-transform: uppercase; letter-spacing: .1em; }
+	sup, sub				{ font-size: 80%; }
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 16px; }
+	blockquote { margin: 0 0 24px; padding: 9px 20px 0 15px; }
+	blockquote cite { line-height:18px; }
+
+	hr { margin: 12px 0 11px; }
+
+/* 	#Links */
+	a, a:visited { color: #2aa7df; padding: 6px; margin: 0 -6px; text-decoration: none; }
+	a:hover, a:focus { color: #fff; background-color: #333; }
+
+/* 	#Lists */
+	ul, ol { margin-bottom: 24px; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 24px; }
+	ul ul, ul ol, ol ol, ol ul { margin: 4px 0 8px 30px; font-size: 100%;  }
+	ul ul li, ul ol li, ol ol li, ol ul li { margin-bottom: 6px; }
+	li { margin-bottom: 24px; }
+
+/*	 #Buttons */
+	.button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		background: #2aa7df;
+		border: none;
+		color: #fff;
+		font-size: 12px;
+		text-shadow: none;
+		margin-bottom: 24px;
+		padding: 12px 16px;
+	}
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #222;
+		background: #666;
+	}
+
+	.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		border: none;
+		background: #666; 
+	}
+
+/* 	#Forms */
+	form					{ margin-bottom: 24px; }
+	fieldset					{ margin-bottom: 24px; }
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		font: 12px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #333;
+		margin-bottom: 24px;
+	}
+
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+ 		color: #333;
+ 	}
+
+	label,
+	legend { font-size: 14px;  }
+
+	label span,
+	legend span {
+		font-size: 14px;
+		color: #333; 
+	}
+
+/* #Site Styles
+================================================== */
+	body { margin: 24px; }
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
