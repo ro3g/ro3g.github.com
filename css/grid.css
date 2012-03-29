@@ -1,0 +1,104 @@
+﻿/* #Base 984px Grid
+================================================== */
+
+/* Declare size of the display area and center */
+.container				{ width: 984px; margin: 0 auto; }
+
+.fourth,
+.third,
+.half,
+.two-thirds,
+.three-fourths				{ float:left; margin-right: 24px; }
+
+.row .fourth:first-of-type,
+.row .third:first-of-type,
+.row .half:first-of-type,
+.row .two-thirds:first-of-type,
+.row .three-fourths:first-of-type	{ padding-left:20px; }
+
+.row .fourth:last-of-type,
+.row .third:last-of-type,
+.row .half:last-of-type,
+.row .two-thirds:last-of-type,
+.row .three-fourths:last-of-type	{ padding-right:20px; margin-right: 0; }
+
+/* tool used to test grid spacing just apply it to the containing element ou are working with */
+.grid					{ background: url("images/screen.png"); }
+
+/* Normal Grid Setup */
+
+.fourth					{ width: 228px; }
+.third					{ width: 312px; }
+.half					{ width: 480px; }
+.two-thirds				{ width: 648px; }
+.three-fourths				{ width: 732px; }
+	
+.pad-fourth				{ margin-left: 252px; margin-right: 0; }
+.pad-third				{ margin-left: 336px; margin-right: 0; }
+.pad-half				{ margin-left: 504px; margin-right: 0; }
+.pad-two-thirds			{ margin-left: 672px; margin-right: 0; }
+.pad-three-fourths			{ margin-left: 756px; margin-right: 0; }
+
+.row					{ clear:left; }
+
+.no-screen				{ width: 0; display: none; }
+
+/* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after				{ content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns, or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after				{ content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.row:after,
+.clearfix:after				{ clear: both; }
+.row,
+.clearfix				{ zoom: 1; }
+/* You can also use a <br class="clear" /> to clear columns */
+.clear					{ clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
+/* #Tablet (Portrait)
+================================================== */
+/* Ipad Portrait 768px Grid Setup */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.container			{ width: 732px; }
+	.grid				{ background: url("images/tablet.png"); }
+	.three-fourths,	
+	.full				{ width: 100% }
+	.none				{ width: 0; display: none;}
+	.fourth,				
+	.third				{ width: 228px }
+	.half				{ width: 354px }
+	.two-thirds			{ width: 480px }
+	.no-tablet			{ width: 0; display: none; }
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+/* Portrait Mode Phones 320px and Below Grid Setup */
+
+@media only screen and (max-width: 767px) {
+	.container			{ width: 100%; }
+	.screen-only			{ width: 0; display: none; }
+	.grid				{ background: url("images/mobile.png"); }
+	.full				{ width: 100% }
+	.fourth,
+	.third,
+	.half,
+	.two-thirds,
+	.three-fourths			{ float:none; margin-left: 0; width:100%; }
+}
+
+/*  #Mobile (Landscape)
+================================================== */
+/* Iphone Landscape 480px Grid Setup */
+
+@media only screen and (min-width: 478px) and (max-width: 767px) {
+	.container			{ width: 444px; }
+	.grid				{ background: url("images/mobile.png"); }
+	.no-mobile			{ width: 0; display: none; }
+}
